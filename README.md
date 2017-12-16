@@ -1,11 +1,13 @@
 Welcome to Vehicles project to handle customers with connected vehicles
+Web APIs help user to setup environment of customers and each customer has number of connected vehicles. The apis are used to do all required CRUD operations for two main entities of the system Cutomer and Vehicle taking into consideration all refrential integrity and validation rules. Swagger UI are used to expose all these apis. System includes a web interface to display all customers with vehicles and filter by customer and vehicle's connection status.
+Ping is one of the apis that will be exposed by the vehicle once connected and call this method every one minute, this api stores last ping time on the database for this vehicle and on the database side there is a job running every minute to check if there is any vehicle system does not receive any ping pulse from time more than one minute then it will update vehicle's status into InActive until new pulse comes.
 
 Technologies used in the project are as following:
 - .NET Core 1.1 WebAPI with Visual Studio 2017
 - ASP.NET Core 1.1 interface to monitor vehicles status
 - xUnit and Moq for unit testing and integration testing
 - SQL Server 2016 for saving customers/vehicles data into database
-- Dapper as fast ORM
+- Dapper as very fast ORM
 - Swagger for view/expose Web APIs
 
 Architectures and Patterns
