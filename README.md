@@ -18,14 +18,14 @@ Architectures and Patterns
 How To Run:
 - Install Database
 	* Make sure that SQL Server Agent is up and running (system is adding a job to update vehicle status according to received ping requests)
-	* Inside [Database] folder, run CreateDatabase.bat
+	* Inside \Database folder, run CreateDatabase.bat
 	* Check [Output.txt] file created beside batch file
 - Start WebAPI
-	* Run project [Vehicles.Api]
+	* Run project \Vehicles.Api
 - Start Simulator
-	* Run console project [Simulator\Vehicles.Simulator] and enter URL of WebAPI [http://localhost:9711/api]
+	* Run console project \Simulator\Vehicles.Simulator and enter URL of WebAPI [http://localhost:9711/api]
 - Start Monitoring Web Site
-	* Run project [UI\Vehicles.Web]
+	* Run project \UI\Vehicles.Web
 	* Monitor status using URL (http://localhost:16729/VehiclesStatus/ViewReport)
 - (optional) Add/Update/Delete Customers/Vehicles using Swagger.UI
 	* http://localhost:9711/swagger/
@@ -34,7 +34,7 @@ Future Work:
 - Use Azure or AWS for hosting
 - Replace SQL Server database with NoSQL option like MongoDB or Azure Table Storage
 - Convert Ping service into serverless function to can handle enormous amount of calls from vehicles
+- Use CI 
 - Handle authentication and authorization on the system
 - Apply token based technique in communication between service and vehicle using JWT
 - Create better user interface for updating data, monitoring status and displaying reports
-- Use CI 
