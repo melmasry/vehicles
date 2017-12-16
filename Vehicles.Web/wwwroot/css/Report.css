@@ -1,0 +1,22 @@
+﻿div.DTFC_LeftBodyLiner {
+    overflow-x: hidden;
+}
+
+.even {
+    background-color: #E5E5E5 !important;
+}
+
+.odd {
+    background-color: #FFFFFF !important;
+}
+
+#reportGrid_wrapper td:nth-child(1),
+#reportGrid_wrapper th:nth-child(1) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.hasDatepicker {
+    background-color: white !important;
+    cursor: pointer !important;
+}
