@@ -15,6 +15,8 @@ Architectures and Patterns
 - Repository Pattern
 - Unit of Work pattern
 
+![alt text](https://github.com/melmasry/vehicles/blob/master/Design.jpg)
+
 How To Run:
 - Install Database
 	* Make sure that SQL Server Agent is up and running (system is adding a job to update vehicle status according to received ping requests)
@@ -30,10 +32,12 @@ How To Run:
 - (optional) Add/Update/Delete Customers/Vehicles using Swagger.UI
 	* http://localhost:9711/swagger/
 
+
 Future Work:
 - Use Azure or AWS for hosting
 - Replace SQL Server database with NoSQL option like MongoDB or Azure Table Storage
-- Convert Ping service into serverless function to can handle enormous amount of calls from vehicles
+- Replace SQL Job with Azure WebJob
+- Convert Ping service that is used to keep vehicles alive into a serverless function since it will be heavily called by large amount of vehicles
 - Use CI 
 - Handle authentication and authorization on the system
 - Apply token based technique in communication between service and vehicle using JWT
