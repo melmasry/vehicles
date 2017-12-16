@@ -1,0 +1,26 @@
+﻿@using Vehicles.Web.Models;
+@model List<JqueryReportHeader>
+
+<head>
+    <style>
+        th, td {
+            white-space: nowrap;
+        }
+
+        div.dataTables_wrapper {
+            /*width: 800px;*/
+            height: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<table id="reportGrid" class="ui celled table " cellspacing="0" style="width:100%">
+    <thead>
+        <tr>
+            @foreach (JqueryReportHeader colName in Model)
+            {
+                <th>@colName.data</th>
+            }
+        </tr>
+    </thead>
+</table>

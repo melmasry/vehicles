@@ -1,0 +1,21 @@
+﻿@using Vehicles.Web.Models
+@model SearchViewModel
+<div class="panel panel-default" style="text-align:center;margin-top:10px;margin-bottom:10px">
+    <div class="row" style="margin:5px 5px 5px">
+        <div class="col-md-2" style="margin-top: 7px;">
+            @Html.LabelFor(model => Model.CustomerName)
+        </div>
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => Model.CustomerName, new { @id = "CustomerName", @class = "form-control" })
+        </div>
+        <div class="col-md-1" style="text-align:right;margin-top: 7px">
+            @Html.LabelFor(model => Model.Status)
+        </div>
+        <div class="col-md-2">
+            @Html.DropDownListFor(Model => Model.Status, new SelectList(new List<string> { "Active", "InActive"}), "Select All", new { @class = "form-control", @id = "drp_status" })
+        </div>
+        <div class="col-md-1" style="float:right;margin-right:25px">
+            <button id="search" type="button" class="btn btn-primary"><i style="padding:1px" id="searchSpinner"></i>Search</button>
+        </div>
+    </div>
+</div>
