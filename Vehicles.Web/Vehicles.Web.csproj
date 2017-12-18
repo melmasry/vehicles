@@ -12,7 +12,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Docker|AnyCPU'" />
 
   <ItemGroup>
-    <Content Include="wwwroot\js\SearchManager.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="3.3.7" />
