@@ -1,6 +1,6 @@
 language: csharp
 mono: none
-dotnet: 1.1.0
+dotnet: 1.1.5
 script:
   - dotnet restore Vehicles.sln
   - dotnet build Vehicles.sln
