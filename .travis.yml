@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 1.1.0
+script:
+  - dotnet restore Vehicles.sln
+  - dotnet build Vehicles.sln
+  - dotnet test Vehicles.Api.Tests\Vehicles.Api.Tests.csproj
+  - dotnet test Vehicles.Services.Test\Vehicles.Services.Test.csproj
+  - dotnet test Vehicles.IntegrationTest\Vehicles.Api.IntegrationTest.csproj
